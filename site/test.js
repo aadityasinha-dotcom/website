@@ -1,5 +1,8 @@
 
-const greet = (name) => {
-    console.log('hello'+' '+name);
+function multiply(num1,num2){
+    let res = num1*num2;
+    console.log(res);
 }
-greet('adi');
+multiply(20,9);
+multiply(34,0.5);
+multiply(2,3);
