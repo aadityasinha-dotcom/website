@@ -21,11 +21,11 @@ const server = http.createServer((req, res) => {
     let path = './';
     switch(req.url){
         case '/':
-            path += 'index.html';
+            path += 'site/index.html';
             res.statusCode = 200;
             break;
         case '/about':
-            path += 'about.html';
+            path += 'site/about.html';
             res.statusCode = 200;
             break;
         case '/about-me':
