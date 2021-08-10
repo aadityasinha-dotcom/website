@@ -18,14 +18,14 @@ const server = http.createServer((req, res) => {
     //set header content type
     res.setHeader('Content-Type', 'text/html');
 
-    let path = './';
+    let path = './site/';
     switch(req.url){
         case '/':
-            path += 'site/index.html';
+            path += 'index.html';
             res.statusCode = 200;
             break;
         case '/about':
-            path += 'site/about.html';
+            path += 'about.html';
             res.statusCode = 200;
             break;
         case '/about-me':
