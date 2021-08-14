@@ -10,11 +10,9 @@ app.set('view engine', 'ejs');
 app.listen(3000);
 
 app.get('/', (req, res) => {
-
-    res.sendFile('./site/index.html', { root: __dirname });
+    res.render('index', { title: 'Home' });
 });
 
 app.get('/about', (req, res) => {
-
-    res.sendFile('./site/about.html', { root: __dirname });
+    res.render('about', { title: 'About' });
 })
